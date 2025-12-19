@@ -1,5 +1,5 @@
-    const h1 = React.createElement('h1',null,'Hello World I am learning React')
-    const h2 = React.createElement('h2',null,'Hello World I am learning React')
-    const div = React.createElement('div',null,h1,h2)
-    const root = ReactDOM.createRoot(document.querySelector('#root'))
-    root.render(div)
+import div from './parent.js';
+
+const root = ReactDOM.createRoot(document.querySelector('#root'))
+
+root.render(div())

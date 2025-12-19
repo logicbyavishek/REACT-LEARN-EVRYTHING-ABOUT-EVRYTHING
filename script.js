@@ -1,5 +1,5 @@
-import div from './parent.js';
+import nav from './nav.js';
+import header from './header.js';
 
-const root = ReactDOM.createRoot(document.querySelector('#root'))
-
-root.render(div())
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render([nav, header]);

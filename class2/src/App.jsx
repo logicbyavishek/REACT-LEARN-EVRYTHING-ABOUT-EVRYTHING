@@ -4,14 +4,17 @@ const App = () => {
   let a = 0
   const [first, setfirst] = useState(a)
 
-  function buttonClick(){
-    setfirst(a++)
-  }
+  
 
   return (
     <div>
       <h1>{first}</h1>
-      <button onClick={buttonClick}>increase</button>
+      <button onClick={()=>{
+        setfirst(first + 1)
+      }}>increase</button>
+      <button onClick={()=>{
+        setfirst(first -1)
+      }}>decrease</button>
     </div>
   )
 }

@@ -7,7 +7,7 @@ const App = () => {
   
 
   return (
-    <div>
+    <div className='app'>
       <h1>{first}</h1>
       <button onClick={()=>{
         setfirst(first + 1)

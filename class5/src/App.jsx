@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
   const SubmitHandeler=(e)=>{
     e.preventDefault();
-    console.log("Form Submitted");
+    console.log(name);
   }
+
+  const [name, setname] = useState('');
+
   return (
     <div>
       <form onSubmit={(e)=>{
@@ -13,7 +16,8 @@ const App = () => {
         <input 
           type="text" 
           placeholder='Enter Name' 
-          value="Avishek"
+          value={name} 
+          onChange={(e)=>setname(e.target.value)}
         />
         <button>Submit</button>
       </form>

@@ -1,0 +1,36 @@
+
+@import "tailwindcss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+form{
+  padding: 20px;
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+input,button{
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  border:1px solid gray;
+}
+button{
+  background-color: teal;
+  color:white;
+  cursor: pointer;
+}
+button:active{
+  transform: scale(0.95);
+}

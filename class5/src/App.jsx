@@ -13,9 +13,7 @@ const App = () => {
         <input 
           type="text" 
           placeholder='Enter Name' 
-          onChange={(e)=>{
-            console.log(e.target.value);
-          }}
+          value="Avishek"
         />
         <button>Submit</button>
       </form>

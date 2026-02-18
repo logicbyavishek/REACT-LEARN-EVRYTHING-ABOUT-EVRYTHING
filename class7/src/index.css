@@ -18,3 +18,10 @@ body{
   background-color: rgb(46, 98, 187);
   padding: 20px;
 }
+
+.Navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}

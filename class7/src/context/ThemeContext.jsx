@@ -1,15 +1,13 @@
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 
 export const ThemeDataContext = createContext()
 
 const ThemeContext = (props) => {
 
-  const themeData = {
-    theme: "light"
-  }
+  const [theme, setTheme] = useState('light')
 
   return (
-    <ThemeDataContext.Provider value={themeData}>
+    <ThemeDataContext.Provider value={theme}>
       {props.children}
     </ThemeDataContext.Provider>
   )
